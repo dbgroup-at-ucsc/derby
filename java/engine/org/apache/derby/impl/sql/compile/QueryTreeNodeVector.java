@@ -46,7 +46,7 @@ abstract class QueryTreeNodeVector extends QueryTreeNode
 		return v.size();
 	}
 
-	QueryTreeNode elementAt(int index)
+    public QueryTreeNode elementAt(int index)
 	{
 		return (QueryTreeNode) v.elementAt(index);
 	}

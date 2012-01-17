@@ -1,0 +1,14 @@
+.project
+.classpath
+bin/classes.storeless/
+bin/classes/
+bin/generated/
+bin/jars/
+bin/java/
+bin/maven2/
+bin/plugins/
+bin/tools/
+changenumber.properties
+classes.storeless/
+classes/
+generated

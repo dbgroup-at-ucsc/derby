@@ -688,6 +688,16 @@ public class CursorNode extends DMLStatementNode
 				getUpdateColumnNames();
 	}
 
+    /**
+     * Gets the orderByList for this instance.
+     *
+     * @return The orderByList.
+     */
+    public OrderByList getOrderByList()
+    {
+        return this.orderByList;
+    }
+
 	/**
 		Positioned update needs to know what the target result set
 		looks like. This is generated from the UpdateColumnList

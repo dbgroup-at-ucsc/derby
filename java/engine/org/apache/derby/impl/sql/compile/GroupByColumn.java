@@ -131,6 +131,10 @@ public class GroupByColumn extends OrderedColumn
 		}
 	}
 
+    /**
+     * @return
+     *      Expression of this column
+     */
 	public ValueNode getColumnExpression() 
 	{
 		return columnExpression;

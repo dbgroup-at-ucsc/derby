@@ -61,6 +61,15 @@ public class OrderByColumn extends OrderedColumn {
 	{
 		this.expression = (ValueNode)expression;
 	}
+
+    /**
+     * @return
+     *      Expression of this column
+     */
+    public ValueNode getColumnExpression()
+    {
+        return expression;
+    }
 	
 	/**
 	 * Convert this object to a String.  See comments in QueryTreeNode.java

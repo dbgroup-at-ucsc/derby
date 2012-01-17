@@ -2491,4 +2491,24 @@ public class SelectNode extends ResultSetNode
         throws StandardException
     {
     }
+
+    /**
+     * Return the groupByList for this SelectNode.
+     *
+     * @return GroupByList  The groupByList for this SelectNode.
+     */
+    public GroupByList getGroupByList()
+    {
+        return groupByList;
+    }
+
+    /**
+     * Return the havingClause for this SelectNode.
+     *
+     * @return HavingClause The havingClause for this SelectNode.
+     */
+    public ValueNode getHavingClause()
+    {
+        return havingClause;
+    }
 }
