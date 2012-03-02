@@ -1826,7 +1826,7 @@ public class JoinNode extends TableOperatorNode
 		}
 	}
 
-	protected PredicateList getLeftPredicateList() throws StandardException
+    public PredicateList getLeftPredicateList() throws StandardException
 	{
 		if (leftPredicateList == null)
 			leftPredicateList = (PredicateList) getNodeFactory().getNode(
@@ -1836,7 +1836,7 @@ public class JoinNode extends TableOperatorNode
 		return leftPredicateList;
 	}
 
-	protected PredicateList getRightPredicateList() throws StandardException
+    public PredicateList getRightPredicateList() throws StandardException
 	{
 		if (rightPredicateList == null)
 			rightPredicateList = (PredicateList) getNodeFactory().getNode(
@@ -1983,6 +1983,14 @@ public class JoinNode extends TableOperatorNode
 	{
 		return rightResultSet;
 	}
+
+    /**
+     * return the join clause.
+     */
+    public ValueNode getJoinClause()
+    {
+        return joinClause;
+    }
 
 	/**
 	 * Accept the visitor for all visitable children of this node.
